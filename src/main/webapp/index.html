@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>EquvalrntImpedance</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+
+        </style>
+    </head>
+    <body>
+    <center>
+        <h1>EquvalrntImpedance</h1>
+        <form action="Servlet" method="post">
+
+            <p>Frequency:<input type=text name=Frequency: ></br>
+                <input type="radio" name="Connection" value="Szeregowo"> Szeregowo
+                <input type="radio" name="Connection" value="Rownolegle"> Równolgle 
+                <input type="radio" name="Connection" value="RownolgleCC"> RównolgleCC </br>
+
+
+            <p>First number:<input type=text name=FirstNumber ></br>
+                <input type="radio" name="FirstComponent" value="Rezystor"> Rezystor 
+                <input type="radio" name="FirstComponent" value="Kondensator"> Kondensator
+                <input type="radio" name="FirstComponent" value="Cewka"> Cewka </br>
+
+            <p>Second Number:<input type=text name=SecondNumber ></p>
+            <input type="radio" name="SecondComponent" value="Rezystor"> Rezystor
+            <input type="radio" name="SecondComponent" value="Kondensator"> Kondensator 
+            <input type="radio" name="SecondComponent" value="Cewka"> Cewka  </br>
+
+
+            <input type="submit" value="Oblicz" />
+
+        </form>
+
+        <form action="DataHolder" method="post">
+            <input type="submit" value="Historia" />
+
+        </form>
+
+        <form action="CoockieLoader" method="post">
+            <input type="submit" value="Laduj starą impedancje <Ciasteczka>" />
+
+        </form>
+       
+        <form action="CookieSaver" method="post">
+            <input type="submit" value="Zapisz impedancje <Ciasteczka>" />
+
+        </form>
+        
+               
+        <form action="ShowDB" method="post">
+            <input type="submit" value="Pokaż dane z bazy danych" />
+
+        </form>
+        
+    </center>
+</body>
+</html>
